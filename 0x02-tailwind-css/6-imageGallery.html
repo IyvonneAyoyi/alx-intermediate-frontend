@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="bg-red-200 w-1/2 p-4">Flexbox Item 1</div>
+            <div class="bg-red-400 w-1/2 p-4">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+    </main>
+
+<!-- ✅ Added new Image Gallery section here -->
+<section id="image-gallery" class="mt-8">
+    <h2 class="text-2xl font-semibold mb-4">Image Gallery</h2>
+
+    <!-- CSS Grid for images -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <figure>
+            <img src="https://picsum.photos/id/1015/800/600" alt="Mountain landscape" 
+                 class="w-full h-48 object-cover rounded" loading="lazy">
+            <figcaption class="text-sm mt-2">Mountain landscape</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/1025/800/600" alt="Forest path" 
+                 class="w-full h-48 object-cover rounded" loading="lazy">
+            <figcaption class="text-sm mt-2">Forest path</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/1035/800/600" alt="City skyline" 
+                 class="w-full h-48 object-cover rounded" loading="lazy">
+            <figcaption class="text-sm mt-2">City skyline</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/1045/800/600" alt="Beach sunset" 
+                 class="w-full h-48 object-cover rounded" loading="lazy">
+            <figcaption class="text-sm mt-2">Beach sunset</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/1055/800/600" alt="Desert dunes" 
+                 class="w-full h-48 object-cover rounded" loading="lazy">
+            <figcaption class="text-sm mt-2">Desert dunes</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/1065/800/600" alt="Snowy peaks" 
+                 class="w-full h-48 object-cover rounded" loading="lazy">
+            <figcaption class="text-sm mt-2">Snowy peaks</figcaption>
+        </figure>
+    </div>
+</section>
+<!-- ✅ End of new Image Gallery section -->
+
+<footer class="bg-gray-800 text-white p-4 mt-4">
+    <p>&copy; 2024 John Doe's Blog</p>
+</footer>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+</html>
+
