@@ -1,0 +1,13 @@
+# Steps I took to install SASS
+
+1. Verified Node.js and npm were installed:
+   node -v
+   npm -v
+
+2. Installed Sass using npm:
+   npm install sass
+
+3. Verified installation:
+   npx sass --version
+
+I am using node -v 22.19.0 and the sass v3.7.4 is deprecated. 
